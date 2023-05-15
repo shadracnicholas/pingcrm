@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     isUrl(...urls) {
-      let currentUrl = this.$page.url.substr(1)
+      let currentUrl = this.$page.url.substring(1)
       if (urls[0] === '') {
         return currentUrl === ''
       }
